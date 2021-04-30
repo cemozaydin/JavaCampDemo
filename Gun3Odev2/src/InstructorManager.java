@@ -9,17 +9,19 @@ public class InstructorManager extends  UserManager{
     @Override
     public void add(User instructor) {
         System.out.println("Eğitmen eklendi : " + instructor.getFirstName() + " " + instructor.getLastName());
-       // _logger.log();
+       _logger.log();
     }
 
     @Override
     public void delete(User instructor) {
         System.out.println("Eğitmen silindi : " + instructor.getFirstName() + " " + instructor.getLastName());
+        _logger.log();
     }
 
     @Override
     public void update(User instructor) {
         System.out.println("Eğitmen güncellendi : " + instructor.getFirstName() + " " + instructor.getLastName());
+        _logger.log();
     }
 
     @Override
